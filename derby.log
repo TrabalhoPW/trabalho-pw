@@ -1,1 +1,14 @@
 Fri Nov 24 19:33:44 BRST 2017 : Apache Derby Servidor de Rede - 10.14.1.0 - (1808820) iniciado e pronto para aceitar conexões na porta 1527 em {3}
+----------------------------------------------------------------
+Fri Nov 24 20:02:25 BRST 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-015f-eff3-5dca-000003fc8d18 
+on database directory C:\Users\Marcos Ariel\Desktop\PW\trabalho-pw\pwdb with class loader java.net.URLClassLoader@52b66441 
+Loaded from file:/C:/Users/Marcos%20Ariel/.m2/repository/org/apache/derby/derby/10.14.1.0/derby-10.14.1.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_131-b11
+user.dir=C:\Users\Marcos Ariel\Desktop\PW\trabalho-pw
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
