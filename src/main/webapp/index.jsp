@@ -38,19 +38,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services" style="color: black">Serviços</a>
+              <a class="nav-link js-scroll-trigger" href="#services" style="color: #fed136">Serviços</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="jpa/cadastro" style="color: black">Cadastro</a>
+              <a class="nav-link js-scroll-trigger" href="jpa/cadastro" style="color: #fed136">Cadastro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about" style="color: black">Sobre</a>
+              <a class="nav-link js-scroll-trigger" href="#about" style="color: #fed136">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact" style="color: black">Fale Conosco</a>
+              <a class="nav-link js-scroll-trigger" href="#contact" style="color: #fed136">Fale Conosco</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="login.html" style="color: black">Entrar</a>
+              <a class="nav-link js-scroll-trigger" href="login.html" style="color: #fed136">Entrar</a>
             </li>
           </ul>
         </div>
