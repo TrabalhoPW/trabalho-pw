@@ -1,8 +1,12 @@
 node_modules
 /target/
+<<<<<<< HEAD
 /mrdb/
 /Pesquisas
 /derby.log
 /.classpath
 /.project
 /.settings/
+=======
+derby.log
+>>>>>>> branch 'master' of https://github.com/TrabalhoPW/trabalho-pw.git
