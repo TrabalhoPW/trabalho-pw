@@ -1,2 +1,8 @@
 node_modules
 /target/
+/mrdb/
+/Pesquisas
+/derby.log
+/.classpath
+/.project
+/.settings/

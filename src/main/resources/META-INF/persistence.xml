@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
   version="2.1">
 
-  <persistence-unit name="professores">
+  <persistence-unit name="usuario">
     <!-- Para definir o Hibernate como implementação do JPA. -->
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
     <class>jpa.Usuario</class>
@@ -14,7 +14,7 @@
       <property name="hibernate.connection.driver_class"
         value="org.apache.derby.jdbc.ClientDriver"/>
       <property name="hibernate.connection.url"
-        value="jdbc:derby://localhost/pwdb;create=true"/>
+        value="jdbc:derby://localhost/mrdb;create=true"/>
       <!-- Dialeto Hibernate para o Derby. -->
       <property name="hibernate.dialect"
         value="org.hibernate.dialect.DerbyDialect" />

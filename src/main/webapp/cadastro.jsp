@@ -31,29 +31,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="index.jsp">Mão Na Roda</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Serviços</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Cadastro</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Fale Conosco</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="loginmarcos.html">Entrar</a>
-            </li>
-          </ul>
-        </div>
+      
       </div>
     </nav>
    
@@ -79,12 +57,12 @@
                         <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
                         <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
                         <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-                        <form name="sentMessage" id="contactForm" novalidate>
+                        <form name="sentMessage" novalidate>
                           
                           <div class="control-group">
                             <div class="form-group floating-label-form-group controls">
                               <label>Nome</label>
-                              <input type="text" class="form-control" placeholder="Nome" id="nome" required data-validation-required-message="Digite seu nome.">
+                              <input type="text" class="form-control" placeholder="Nome" id="nome" name="nome" required data-validation-required-message="Digite seu nome.">
                               <p class="help-block text-danger"></p>
                             </div>
                           </div>
@@ -92,7 +70,7 @@
                           <div class="control-group">
                             <div class="form-group floating-label-form-group controls">
                               <label>Login</label>
-                              <input type="text" class="form-control" placeholder="Usuario" id="login" required data-validation-required-message="Digite o seu login.">
+                              <input type="text" class="form-control" placeholder="Usuario" id="login" name="login" required data-validation-required-message="Digite o seu login.">
                               <p class="help-block text-danger"></p>
                             </div>
                           </div>
@@ -100,22 +78,15 @@
                           <div class="control-group">
                             <div class="form-group floating-label-form-group controls">
                               <label>Senha</label>
-                              <input type="password" class="form-control" placeholder="Senha" id="senha" required data-validation-required-message="Digite sua senha..">
+                              <input type="password" class="form-control" placeholder="Senha" id="senha" name="senha"required data-validation-required-message="Digite sua senha..">
                               <p class="help-block text-danger"></p>
                             </div>
                           </div>
 
-                          <div class="control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                              <label>Confirme a Senha</label>
-                              <input type="password" class="form-control" placeholder="Repetir senha" id="confirmasenha" required data-validation-required-message="Repita sua senha.">
-                              <p class="help-block text-danger"></p>
-                            </div>
-                          </div>
                           <br>
                           <div id="success"></div>
                           <div class="form-group">
-                            <button type="submit" class="btn btn-secondary" id="success" professores?nome=123&nome=asdf&operacao=incluir>Cadastrar</button>
+                            <button name="operacao" value="cadastrar" class="btn btn-secondary">Cadastrar</button>
                           </div>
                         </form>
                       </div>
@@ -124,42 +95,6 @@
 
     <hr>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <ul class="list-inline text-center">
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-            </ul>
-            <p class="copyright text-muted">Copyright &copy; Your Website 2017</p>
-          </div>
-        </div>
-      </div>
-    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>

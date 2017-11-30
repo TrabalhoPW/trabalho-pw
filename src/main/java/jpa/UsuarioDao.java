@@ -15,7 +15,7 @@ public class UsuarioDao {
 	
 	//"professores" é o nome da unidade de persistência no "persistence.xml".
 	
-	private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("professores");
+	private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("usuario");
 
 	public static void cadastrar(String nome, String login, String senha) {
 		// Obter "conexão".

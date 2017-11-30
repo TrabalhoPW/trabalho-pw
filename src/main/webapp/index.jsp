@@ -41,7 +41,7 @@
               <a class="nav-link js-scroll-trigger" href="#services" style="color: black">Serviços</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="jpa/cadastro" style="color: black">Cadastro</a>
+              <a class="nav-link js-scroll-trigger" href="cadastro" style="color: black">Cadastro</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about" style="color: black">Sobre</a>
@@ -491,7 +491,7 @@
 
     <!-- Contact form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+<!--     <script src="js/contact_me.js"></script> -->
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>

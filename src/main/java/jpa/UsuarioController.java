@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/jpa/cadastro")
+@WebServlet("/cadastro")
 public class UsuarioController extends HttpServlet {
 	private String valor(HttpServletRequest req, String param, String padrao) {
 		String result = req.getParameter(param);
@@ -26,6 +26,7 @@ public class UsuarioController extends HttpServlet {
 			String login = valor(req, "login", "");
 			String senha = valor(req, "senha", "");
 			String nome = valor(req, "nome", "");
+				
 			if (op.equals("cadastrar")) {
 				UsuarioDao.cadastrar(nome, login, senha);
 				msg = "Inclusão realizada com sucesso.";
