@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/jpa/professores")
-public class ProfessorController extends HttpServlet {
+@WebServlet("/jpa/login")
+public class UsuarioController extends HttpServlet {
 	private String valor(HttpServletRequest req, String param, String padrao) {
 		String result = req.getParameter(param);
 		if (result == null) {
@@ -23,16 +23,17 @@ public class ProfessorController extends HttpServlet {
 		try {
 			String msg;
 			String op = valor(req, "operacao", "");
-			String matricula = valor(req, "matricula", "");
+			String login = valor(req, "login", "");
+			String senha = valor(req, "senha", "");
 			String nome = valor(req, "nome", "");
 			if (op.equals("incluir")) {
-				ProfessorDao.inclui(matricula, nome);
+				UsuarioDao.inclui(login, senha);
 				msg = "Inclusão realizada com sucesso.";
-			} else if (op.equals("alterar")) {
-				ProfessorDao.alterar(matricula, nome);
+			} else if (op.equals("alterarsenha")) {
+				UsuarioDao.alterar(login, senha);
 				msg = "Alteração realizada com sucesso.";
 			} else if (op.equals("excluir")) {
-				ProfessorDao.excluir(matricula);
+				UsuarioDao.excluir(matricula);
 				msg = "Exclusão realizada com sucesso.";
 			} else if (op.equals("")) {
 				msg = "";

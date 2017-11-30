@@ -10,7 +10,7 @@ import javax.persistence.TypedQuery;
 /**
  * Data Access Object.
  */
-public class ProfessorDao {
+public class UsuarioDao {
 
 	//"professores" é o nome da unidade de persistência no "persistence.xml".
 	private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("professores");

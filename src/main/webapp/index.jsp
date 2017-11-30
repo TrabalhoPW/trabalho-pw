@@ -38,19 +38,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Serviços</a>
+              <a class="nav-link js-scroll-trigger" href="#services" style="color: black">Serviços</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Cadastro</a>
+              <a class="nav-link js-scroll-trigger" href="cadastro.html" style="color: black">Cadastro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
+              <a class="nav-link js-scroll-trigger" href="#about" style="color: black">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Fale Conosco</a>
+              <a class="nav-link js-scroll-trigger" href="#contact" style="color: black">Fale Conosco</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="loginmarcos.html">Entrar</a>
+              <a class="nav-link js-scroll-trigger" href="login.html" style="color: black">Entrar</a>
             </li>
           </ul>
         </div>
