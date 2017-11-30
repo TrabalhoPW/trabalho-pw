@@ -5,7 +5,6 @@ node_modules
 /mrdb/
 /Pesquisas
 /derby.log
-/.classpath
 /.project
 /.settings/
 =======
@@ -14,3 +13,4 @@ derby.log
 =======
 derby.log
 >>>>>>> 9a77377c4f186d3753401aa0235e24262c08d9e7
+/
