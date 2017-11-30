@@ -8,7 +8,7 @@
   <persistence-unit name="professores">
     <!-- Para definir o Hibernate como implementação do JPA. -->
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
-    <class>jpa.Professor</class>
+    <class>jpa.Usuario</class>
     <properties>
       <!-- Driver JDBC do Derby. -->
       <property name="hibernate.connection.driver_class"

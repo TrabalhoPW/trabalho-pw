@@ -41,7 +41,7 @@
               <a class="nav-link js-scroll-trigger" href="#services" style="color: black">Serviços</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="cadastro.html" style="color: black">Cadastro</a>
+              <a class="nav-link js-scroll-trigger" href="jpa/cadastro" style="color: black">Cadastro</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about" style="color: black">Sobre</a>
