@@ -42,10 +42,14 @@
             </li>
             <li class="nav-item">
 <<<<<<< HEAD
+<<<<<<< HEAD
               <a class="nav-link js-scroll-trigger" href="cadastro" style="color: black">Cadastro</a>
 =======
               <a class="nav-link js-scroll-trigger" href="jpa/cadastro" style="color: #fed136">Cadastro</a>
 >>>>>>> branch 'master' of https://github.com/TrabalhoPW/trabalho-pw.git
+=======
+              <a class="nav-link js-scroll-trigger" href="jpa/cadastro" style="color: #fed136">Cadastro</a>
+>>>>>>> 9a77377c4f186d3753401aa0235e24262c08d9e7
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about" style="color: #fed136">Sobre</a>

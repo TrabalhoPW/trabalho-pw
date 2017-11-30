@@ -1,6 +1,7 @@
 node_modules
 /target/
 <<<<<<< HEAD
+<<<<<<< HEAD
 /mrdb/
 /Pesquisas
 /derby.log
@@ -10,3 +11,6 @@ node_modules
 =======
 derby.log
 >>>>>>> branch 'master' of https://github.com/TrabalhoPW/trabalho-pw.git
+=======
+derby.log
+>>>>>>> 9a77377c4f186d3753401aa0235e24262c08d9e7
