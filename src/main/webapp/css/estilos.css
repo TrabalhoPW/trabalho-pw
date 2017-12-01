@@ -9,19 +9,34 @@
 
 	width: 200px;
 	height: 1200px; 
-	background-color: #dddddd;	
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
 	padding: 20px;	
+}
+
+.pos-input {
+
+	left: 0px;
 }
 
 .cor {
 	background-color: #fed136;
 }
 
-cor-logo-fonte {
+.cor-logo-fonte {
 	
 	color: #000000;
 	font-family: 'Kaushan Script', cursive;
 }
+
+.nome {
+	
+	color: rgba(0,0,0,0.8);
+	margin:10px;
+	margin-top: -10px;
+	font-family: Arial;	
+	text-align: center;
+}
+
 
 .usuario a {
 
@@ -42,8 +57,8 @@ cor-logo-fonte {
 	text-decoration: none;
 	text-align: center;
 	font-family: Arial;
-	color: #ffffff;
-	background-color: #000000;
+	color: #000;
+	background-color: #ddd;
 	
 }
 
