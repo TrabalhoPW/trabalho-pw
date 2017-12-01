@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
   <head>
 
     <meta charset="utf-8">
@@ -8,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Mão Na Roda</title>
+    <title>M�o Na Roda</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +29,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.jsp">Mão Na Roda</a>
+        <a class="navbar-brand js-scroll-trigger" href="index.jsp">M�o Na Roda</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -38,19 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services" style="color: black">Serviços</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="cadastro" style="color: black">Cadastro</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about" style="color: black">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact" style="color: black">Fale Conosco</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="login.html" style="color: black">Entrar</a>
+              <a class="nav-link js-scroll-trigger" href="login" style="color: black">Entrar</a>
             </li>
           </ul>
         </div>
@@ -61,7 +48,7 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in" style="color: black">Faça seu cadastro!</div>
+          <div class="intro-lead-in" style="color: black">Cadastre-se!</div>
         </div>
       </div>
     </header>
@@ -71,16 +58,7 @@
         <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                         <p></p>
-                        <form>
-                          
-                          <div class="control-group">
-                            <div class="form-group floating-label-form-group controls">
-                              <label>Nome</label>
-                              <input type="text" class="form-control" placeholder="Nome" id="nome" name="nome" required data-validation-required-message="Digite seu nome.">
-                              <p class="help-block text-danger"></p>
-                            </div>
-                          </div>
-                          
+                        <form>     
                           <div class="control-group">
                             <div class="form-group floating-label-form-group controls">
                               <label>Login</label>
@@ -96,6 +74,16 @@
                               <p class="help-block text-danger"></p>
                             </div>
                           </div>
+                          
+                          <div class="control-group">
+                            <div class="form-group floating-label-form-group controls">
+                              <label>Senha</label>
+                              <input type="password" class="form-control" placeholder="Senha" id="senha" name="senha"required data-validation-required-message="Digite sua senha..">
+                              <p class="help-block text-danger"></p>
+                            </div>
+                          </div>
+
+                          <br>
 
                           <br>
                           <div id="success"></div>
@@ -112,6 +100,15 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+<!--     <script src="js/contact_me.js"></script> -->
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
 
   </body>
 

@@ -7,6 +7,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @WebServlet("/cadastro")
 public class UsuarioController extends HttpServlet {
@@ -20,6 +21,7 @@ public class UsuarioController extends HttpServlet {
 
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
 		try {
 			String msg;
 			String op = valor(req, "operacao", "");
@@ -27,6 +29,8 @@ public class UsuarioController extends HttpServlet {
 			String senha = valor(req, "senha", "");
 			String nome = valor(req, "nome", "");
 				
+			String pagina = "cadastro.jsp";
+			
 			if (op.equals("cadastrar")) {
 				UsuarioDao.cadastrar(nome, login, senha);
 				msg = "Inclusão realizada com sucesso.";
@@ -36,7 +40,13 @@ public class UsuarioController extends HttpServlet {
 			} else if (op.equals("excluir")) {
 				UsuarioDao.excluir(matricula);
 				msg = "Exclusão realizada com sucesso.";
-			*/} else if (op.equals("")) {
+			*/} else if (op.equals("logar")) {
+				UsuarioDao.PesquisarLogin(login, senha);
+				pagina = "logado.jsp";
+				msg = "";
+
+			} else if (op.equals("")) {
+				
 				msg = "";
 			} else {
 				throw new IllegalArgumentException("Operação \"" + op + "\" não suportada.");
@@ -44,7 +54,7 @@ public class UsuarioController extends HttpServlet {
 			req.setAttribute("msg", msg);
 			//req.setAttribute("professores", UsuarioDao.listar());
 			
-			req.getRequestDispatcher("cadastro.jsp").forward(req, resp);
+			req.getRequestDispatcher(pagina).forward(req, resp);
 		} catch (Exception e) {
 			e.printStackTrace(resp.getWriter());
 		}

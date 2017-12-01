@@ -50,7 +50,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact" style="color: black">Fale Conosco</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="login.html" style="color: black">Entrar</a>
+              <a class="nav-link js-scroll-trigger" href="login" style="color: black">Entrar</a>
             </li>
           </ul>
         </div>

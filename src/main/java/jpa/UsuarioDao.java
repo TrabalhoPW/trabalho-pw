@@ -32,6 +32,29 @@ public class UsuarioDao {
 		em.getTransaction().commit();
 		em.close();
 	}
+	public static void PesquisarLogin(String login, String senha) {
+		//System.out.println("CHEGOU2");
+		
+		try {
+
+			EntityManager em = emf.createEntityManager();
+
+			Usuario pesq = em.find(Usuario.class, login);
+			
+			//System.out.println(pesq.getLogin());
+			//System.out.println(login);
+			
+			if(login.equals(pesq.getLogin())){
+				
+			
+			}else{
+				System.out.println("Usuario não encontrado!!!");
+				System.out.println(pesq.getLogin());
+				System.out.println(login);
+			}
+			}finally {}
+		}
+		
 
 	public static void alterar(String matricula, String nome) {
 	}
