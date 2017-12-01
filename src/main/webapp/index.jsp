@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
   <head>
 
     <meta charset="utf-8">
@@ -38,27 +38,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services" style="color: #fed136">Servi�os</a>
+              <a class="nav-link js-scroll-trigger" href="#services" style="color: black">Serviços</a>
             </li>
             <li class="nav-item">
-<<<<<<< HEAD
-<<<<<<< HEAD
               <a class="nav-link js-scroll-trigger" href="cadastro" style="color: black">Cadastro</a>
-=======
-              <a class="nav-link js-scroll-trigger" href="jpa/cadastro" style="color: #fed136">Cadastro</a>
->>>>>>> branch 'master' of https://github.com/TrabalhoPW/trabalho-pw.git
-=======
-              <a class="nav-link js-scroll-trigger" href="jpa/cadastro" style="color: #fed136">Cadastro</a>
->>>>>>> 9a77377c4f186d3753401aa0235e24262c08d9e7
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about" style="color: #fed136">Sobre</a>
+              <a class="nav-link js-scroll-trigger" href="#about" style="color: black">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact" style="color: #fed136">Fale Conosco</a>
+              <a class="nav-link js-scroll-trigger" href="#contact" style="color: black">Fale Conosco</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="login.html" style="color: #fed136">Entrar</a>
+              <a class="nav-link js-scroll-trigger" href="login.html" style="color: black">Entrar</a>
             </li>
           </ul>
         </div>
@@ -92,7 +84,7 @@
               <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Pintura</h4>
-            <p class="text-muted"><!--texto aleatório--></p>
+            <p class="text-muted"><!--texto aleatÃ³rio--></p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -100,7 +92,7 @@
               <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Informática</h4>
-            <p class="text-muted"><!--texto aleatório--></p>
+            <p class="text-muted"><!--texto aleatÃ³rio--></p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -108,7 +100,7 @@
               <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">Serviços elétricos</h4>
-            <p class="text-muted"><!--texto aleatório--></p>
+            <p class="text-muted"><!--texto aleatÃ³rio--></p>
           </div>
         </div>
       </div>
@@ -125,7 +117,7 @@
         </div>
         <div class="row"> 
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <a class="portfolio-link" data-toggle="modal" href="cadastro">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -139,7 +131,7 @@
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <a class="portfolio-link" data-toggle="modal" href="cadastro">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -153,7 +145,7 @@
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <a class="portfolio-link" data-toggle="modal" href="cadastro">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -208,7 +200,7 @@
                     <h4 class="subheading">O céu é o limite.</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted"> <!--et ea quo dolore laudantium consectetur!--></p>
+                    <p class="text-muted"></p>
                   </div>
                 </div>
               </li>
@@ -253,7 +245,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Fale Conosco</h2>
-            <h3 class="section-subheading text-muted"><!--Lorem ipsum dolor sit amet consectetur.--></h3>
+            <h3 class="section-subheading text-muted"></h3>
           </div>
         </div>
         <div class="row">
@@ -296,199 +288,12 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2017</span>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-            </ul>
+          <div class="col-md-10">
+            <span class="copyright">Copyright &copy; Mão Na Roda 2017</span>
           </div>
         </div>
       </div>
     </footer>
-
-    <!-- Portfolio Modals -->
-
-    <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Cadastro</h2>
-                  <p class="item-intro text-muted"></p>
-                    <div class="main-login main-center">
-                      <form class="form-horizontal" method="post" action="#">
-                        
-                        <div class="form-group">
-                          <label for="name" class="cols-sm-2 control-label">Nome</label>
-                          <div class="cols-sm-10">
-                            <div class="input-group">
-                              <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                              <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
-                            </div>
-                          </div>
-                        </div>
-            
-                        <div class="form-group">
-                          <label for="email" class="cols-sm-2 control-label">Email</label>
-                          <div class="cols-sm-10">
-                            <div class="input-group">
-                              <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                              <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
-                            </div>
-                          </div>
-                        </div>
-            
-                        <div class="form-group">
-                          <label for="username" class="cols-sm-2 control-label">Login</label>
-                          <div class="cols-sm-10">
-                            <div class="input-group">
-                              <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                              <input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
-                            </div>
-                          </div>
-                        </div>
-            
-                        <div class="form-group">
-                          <label for="password" class="cols-sm-2 control-label">Senha</label>
-                          <div class="cols-sm-10">
-                            <div class="input-group">
-                              <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                              <input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
-                            </div>
-                          </div>
-                        </div>
-            
-                        <div class="form-group">
-                          <label for="confirm" class="cols-sm-2 control-label">Confirme a Senha</label>
-                          <div class="cols-sm-10">
-                            <div class="input-group">
-                              <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                              <input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
-                            </div>
-                          </div>
-                        </div>
-            
-                        <div class="form-group ">
-                          <button type="button" class="btn btn-primary btn-lg btn-block login-button">Registrar</button>
-                        </div>
-                        <div class="login-register">
-                                <a href="index.php">Login</a>
-                             </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
