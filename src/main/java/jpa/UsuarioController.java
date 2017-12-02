@@ -40,10 +40,7 @@ public class UsuarioController extends HttpServlet {
 			} else if (op.equals("excluir")) {
 				UsuarioDao.excluir(matricula);
 				msg = "Exclusão realizada com sucesso.";
-			*/} else if (op.equals("logar")) {
-				UsuarioDao.PesquisarLogin(login, senha);
-				pagina = "logado.jsp";
-				msg = "";
+			*/
 
 			} else if (op.equals("")) {
 				

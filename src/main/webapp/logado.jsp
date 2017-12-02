@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8"/>
@@ -11,10 +11,11 @@
 <body>
 
 <nav class="navbar navbar-light cor justify-content-between">
-  <a class="navbar-brand cor-logo-fonte">Mão na Roda</a>
+  <a class="navbar-brand cor-logo-fonte" href="index.jsp">Mão na Roda</a>
   <form class="form-inline">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0 bg-white text-dark" type="submit">Search</button>
+    <button class="btn btn-outline-success my-2 my-sm-0 bg-white text-dark" type="submit" href="index.jsp">Logout</button>
   </form>
 </nav>
 
@@ -31,8 +32,8 @@
     Featured
   </div>
   <div class="card-body">
-    <h4 class="card-title">Faça Sua Pesquisa</h4>
-    <p class="card-text">Encontre o serviço procurado com simplicidade e facilidade.</p>
+    <h4 class="card-title">FaÃ§a Sua Pesquisa</h4>
+    <p class="card-text">Encontre o serviÃ§o procurado com simplicidade e facilidade.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
