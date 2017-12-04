@@ -7,7 +7,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 @WebServlet("/login")
 public class LoginController extends HttpServlet {
@@ -21,7 +20,7 @@ public class LoginController extends HttpServlet {
 
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
+			
 		try {
 			String msg;
 			String op = valor(req, "operacao", "");
@@ -39,10 +38,15 @@ public class LoginController extends HttpServlet {
 					msg = "Bem Vindo!";
 				}
 				else {
+					pagina ="login.jsp";	
 					msg = "Usuário ou Senha incorretos!";
 				}
 
-			} else if (op.equals("")) {
+			}else if (op.equals("alterar")) {
+				UsuarioDao.AlterarSenha(login, senha);
+				msg = "Alteração realizada com sucesso.";
+				
+			}else if (op.equals("")) {
 				
 				msg = "";
 			} else {

@@ -59,7 +59,16 @@
         <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                         <p></p>
-                        <form>     
+                        <form>
+                          
+                          <div class="control-group">
+                            <div class="form-group floating-label-form-group controls">
+                              <label>Nome</label>
+                              <input type="text" class="form-control" placeholder="Nome" id="nome" name="nome" required data-validation-required-message="Digite seu nome.">
+                              <p class="help-block text-danger"></p>
+                            </div>
+                          </div>
+                          
                           <div class="control-group">
                             <div class="form-group floating-label-form-group controls">
                               <label>Login</label>
@@ -75,16 +84,6 @@
                               <p class="help-block text-danger"></p>
                             </div>
                           </div>
-                          
-                          <div class="control-group">
-                            <div class="form-group floating-label-form-group controls">
-                              <label>Senha</label>
-                              <input type="password" class="form-control" placeholder="Senha" id="senha" name="senha"required data-validation-required-message="Digite sua senha..">
-                              <p class="help-block text-danger"></p>
-                            </div>
-                          </div>
-
-                          <br>
 
                           <br>
                           <div id="success"></div>
@@ -95,6 +94,7 @@
                       </div>
         </div>
     </div>
+
 
     
     <!-- Bootstrap core JavaScript -->

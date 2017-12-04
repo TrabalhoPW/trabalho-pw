@@ -26,6 +26,7 @@ public class UsuarioDao {
 		usuario.setNome(nome);
 		usuario.setSenha(senha);
 		usuario.setLogin(login);
+		usuario.setTipo("padrao");
 
 		// Grava o objeto no banco de dados.
 		em.persist(usuario);
@@ -41,8 +42,14 @@ public class UsuarioDao {
 			EntityManager em = emf.createEntityManager();
 
 			Usuario pesq = em.find(Usuario.class, login);
-			
-			if(login.equals(pesq.getLogin())){
+
+			if (pesq == null) {
+				
+				pesq = new Usuario();
+				pesq.setLogin("QWsdafsFAAsdsdafdteerbgDFAqwsAASdasdqweg");
+				pesq.setSenha("QWsdafsFAAsdsdafdteerbgDFAqwsAASdasdqweg");
+			}
+			if(login.equals(pesq.getLogin()) && senha.equals(pesq.getSenha())){
 				
 				encontrado = true;
 				
@@ -53,7 +60,18 @@ public class UsuarioDao {
 		return encontrado;
 		}
 		
-	public static void alterar(String matricula, String nome) {
+	public static void AlterarSenha (String login, String novasenha) {
+		// Obter "conexão".
+		EntityManager em = emf.createEntityManager();
+		em.getTransaction().begin();
+
+		Usuario usuario = em.find(Usuario.class, login);
+		usuario.setSenha(novasenha);
+
+		// Grava o objeto no banco de dados.
+		em.persist(usuario);
+		em.getTransaction().commit();
+		em.close();
 	}
 
 	public static void excluir(String matricula) {

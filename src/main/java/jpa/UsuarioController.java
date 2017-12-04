@@ -7,10 +7,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 @WebServlet("/cadastro")
 public class UsuarioController extends HttpServlet {
+	
 	private String valor(HttpServletRequest req, String param, String padrao) {
 		String result = req.getParameter(param);
 		if (result == null) {
@@ -34,10 +34,7 @@ public class UsuarioController extends HttpServlet {
 			if (op.equals("cadastrar")) {
 				UsuarioDao.cadastrar(nome, login, senha);
 				msg = "Inclusão realizada com sucesso.";
-			/*} else if (op.equals("alterarsenha")) {
-				UsuarioDao.alterar(login, senha);
-				msg = "Alteração realizada com sucesso.";
-			} else if (op.equals("excluir")) {
+			/*} else if (op.equals("excluir")) {
 				UsuarioDao.excluir(matricula);
 				msg = "Exclusão realizada com sucesso.";
 			*/
