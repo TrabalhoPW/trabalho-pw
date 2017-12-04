@@ -32,11 +32,16 @@ public class LoginController extends HttpServlet {
 			if (op.equals("logar")) {
 				
 				
-				if(UsuarioDao.PesquisarLogin(login, senha)){
+				if(UsuarioDao.PesquisarLogin(login, senha).equals("padrao")){
 					
 					pagina = "logado.jsp";
 					msg = "Bem Vindo!";
+				}else if(UsuarioDao.PesquisarLogin(login, senha).equals("adm")){
+						
+					pagina = "logadoadmin.jsp";
+					msg = "Bem Vindo!";
 				}
+				
 				else {
 					pagina ="login.jsp";	
 					msg = "Usuário ou Senha incorretos!";
@@ -49,6 +54,7 @@ public class LoginController extends HttpServlet {
 			}else if (op.equals("")) {
 				
 				msg = "";
+				pagina = "login.jsp";
 			} else {
 				throw new IllegalArgumentException("Operação \"" + op + "\" não suportada.");
 			}

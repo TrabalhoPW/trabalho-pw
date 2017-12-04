@@ -39,7 +39,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.jsp">Mão Na Roda</a>
+        <a class="navbar-brand js-scroll-trigger" href="/trabalho-pw">Mão Na Roda</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -47,7 +47,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="login.jsp" style="color: black">Entrar</a>
+              <a class="nav-link js-scroll-trigger" href="login" style="color: black">Entrar</a>
             </li>
           </ul>
         </div>
@@ -58,7 +58,7 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in" style="color: black">Mão Na Roda</div>
+          <div class="intro-lead-in" style="color: black">Seja Bem Vindo!</div>
         </div>
       </div>
     </header>

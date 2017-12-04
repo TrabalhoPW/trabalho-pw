@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html lang="pt-br">
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Mão Na Roda</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css"/>
+	<! -- Incluindo CSS Bootstrap -->	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" 		crossorigin="anonymous">
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
 
-  </head>
+</head>
+<body>
 
-  <body id="page-top">
-
-    <!-- Navigation -->
+ <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="/trabalho-pw">Mão Na Roda</a>
@@ -38,24 +28,34 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="login" style="color: black">Entrar</a>
+              <a class="nav-link js-scroll-trigger" style="color: black">Listar Usuários Cadastrados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#alterarsenha" style="color: black">Alterar Senha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="login" style="color: black">Sair</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container">
-        <div class="intro-text">
-          <div class="intro-lead-in" style="color: black">Cadastre-se!</div>
-        </div>
-      </div>
-    </header>
-    
-<!-- Main Content -->
-    <div class="container">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>	
+<div class=container>
+<div class="usuario">
+	<img src="img/user.png"/>	
+		<a href="#">Minha Conta</a>
+		<a href="#">Orçamentos</a>
+</div>
+</div>
+
+<section id="alterarsenha">
+<div class="container">
         <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                         <p></p>
@@ -63,9 +63,7 @@
                           
                           <div class="control-group">
                             <div class="form-group floating-label-form-group controls">
-                              <label>Nome</label>
-                              <input type="text" class="form-control" placeholder="Nome" id="nome" name="nome" required data-validation-required-message="Digite seu nome.">
-                              <p class="help-block text-danger"></p>
+                              <label>Altere Sua Senha!</label>
                             </div>
                           </div>
                           
@@ -88,16 +86,20 @@
                           <br>
                           <div id="success"></div>
                           <div class="form-group">
-                            <button name="operacao" value="cadastrar" class="btn btn-secondary">Cadastrar</button>
+                            <button name="operacao" value="alterar" class="btn btn-secondary">Alterar</button>
                           </div>
                         </form>
                       </div>
         </div>
     </div>
+    </section>
 
+	<!-- Incluindo JQuery e BootStrap-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-    
-    <!-- Bootstrap core JavaScript -->
+	 <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -106,11 +108,8 @@
 
     <!-- Contact form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-<!--     <script src="js/contact_me.js"></script> -->
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
-
-  </body>
-
+</body>
 </html>

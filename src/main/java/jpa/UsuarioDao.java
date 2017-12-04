@@ -6,6 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
+import javax.swing.JOptionPane;
 
 /**
  * Data Access Object.
@@ -33,31 +34,35 @@ public class UsuarioDao {
 		em.getTransaction().commit();
 		em.close();
 	}
-	public static boolean PesquisarLogin(String login, String senha) {
+	public static String PesquisarLogin(String login, String senha) {
 		
-		boolean encontrado = false;
+		String resultado = "";
 		
 		try {
 
 			EntityManager em = emf.createEntityManager();
 
 			Usuario pesq = em.find(Usuario.class, login);
+			
+			
 
 			if (pesq == null) {
 				
 				pesq = new Usuario();
 				pesq.setLogin("QWsdafsFAAsdsdafdteerbgDFAqwsAASdasdqweg");
 				pesq.setSenha("QWsdafsFAAsdsdafdteerbgDFAqwsAASdasdqweg");
+				pesq.setTipo("");
 			}
 			if(login.equals(pesq.getLogin()) && senha.equals(pesq.getSenha())){
 				
-				encontrado = true;
-				
+				resultado = pesq.getTipo();
+				System.out.println(resultado);
+				return resultado;	
 			}
 			
 			}finally {}
 		
-		return encontrado;
+		return resultado;
 		}
 		
 	public static void AlterarSenha (String login, String novasenha) {
@@ -69,7 +74,7 @@ public class UsuarioDao {
 		usuario.setSenha(novasenha);
 
 		// Grava o objeto no banco de dados.
-		em.persist(usuario);
+		em.refresh(usuario);
 		em.getTransaction().commit();
 		em.close();
 	}
