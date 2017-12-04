@@ -13,7 +13,7 @@ import javax.persistence.TypedQuery;
 public class UsuarioDao {
 
 	
-	//"professores" é o nome da unidade de persistência no "persistence.xml".
+	//"usuario" é o nome da unidade de persistência no "persistence.xml".
 	
 	private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("usuario");
 
@@ -32,8 +32,9 @@ public class UsuarioDao {
 		em.getTransaction().commit();
 		em.close();
 	}
-	public static void PesquisarLogin(String login, String senha) {
-		//System.out.println("CHEGOU2");
+	public static boolean PesquisarLogin(String login, String senha) {
+		
+		boolean encontrado = false;
 		
 		try {
 
@@ -41,21 +42,17 @@ public class UsuarioDao {
 
 			Usuario pesq = em.find(Usuario.class, login);
 			
-			//System.out.println(pesq.getLogin());
-			//System.out.println(login);
-			
 			if(login.equals(pesq.getLogin())){
 				
-			
-			}else{
-				System.out.println("Usuario não encontrado!!!");
-				System.out.println(pesq.getLogin());
-				System.out.println(login);
+				encontrado = true;
+				
 			}
+			
 			}finally {}
+		
+		return encontrado;
 		}
 		
-
 	public static void alterar(String matricula, String nome) {
 	}
 

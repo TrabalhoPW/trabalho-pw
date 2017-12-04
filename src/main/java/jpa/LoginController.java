@@ -27,24 +27,20 @@ public class LoginController extends HttpServlet {
 			String op = valor(req, "operacao", "");
 			String login = valor(req, "login", "");
 			String senha = valor(req, "senha", "");
-			String nome = valor(req, "nome", "");
 				
 			String pagina = "login.jsp";
 			
-			if (op.equals("cadastrar")) {
-				UsuarioDao.cadastrar(nome, login, senha);
-				msg = "Inclusão realizada com sucesso.";
-			/*} else if (op.equals("alterarsenha")) {
-				UsuarioDao.alterar(login, senha);
-				msg = "Alteração realizada com sucesso.";
-			} else if (op.equals("excluir")) {
-				UsuarioDao.excluir(matricula);
-				msg = "Exclusão realizada com sucesso.";
-			*/} else if (op.equals("logar")) {
-				UsuarioDao.PesquisarLogin(login, senha);
+			if (op.equals("logar")) {
 				
-				pagina = "logado.jsp";
-				msg = "";
+				
+				if(UsuarioDao.PesquisarLogin(login, senha)){
+					
+					pagina = "logado.jsp";
+					msg = "Bem Vindo!";
+				}
+				else {
+					msg = "Usuário ou Senha incorretos!";
+				}
 
 			} else if (op.equals("")) {
 				
@@ -53,8 +49,6 @@ public class LoginController extends HttpServlet {
 				throw new IllegalArgumentException("Operação \"" + op + "\" não suportada.");
 			}
 			req.setAttribute("msg", msg);
-			//req.setAttribute("professores", UsuarioDao.listar());
-			
 			req.getRequestDispatcher(pagina).forward(req, resp);
 		} catch (Exception e) {
 			e.printStackTrace(resp.getWriter());
