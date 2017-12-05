@@ -9,7 +9,6 @@
     <!-- Para definir o Hibernate como implementação do JPA. -->
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
     <class>jpa.Usuario</class>
-    <class>jpa.Produto</class>
     <properties>
       <!-- Driver JDBC do Derby. -->
       <property name="hibernate.connection.driver_class"

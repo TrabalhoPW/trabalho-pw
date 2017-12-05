@@ -55,7 +55,8 @@ public class UsuarioDao {
 			}
 			if(login.equals(pesq.getLogin()) && senha.equals(pesq.getSenha())){
 				
-				resultado = pesq.getTipo();
+				
+				resultado = pesq.getTipo() == null ? "padrao" : pesq.getTipo();
 				System.out.println(resultado);
 				return resultado;	
 			}
