@@ -1,0 +1,38 @@
+/*h1, h2, h3, h4, h5, h6, a {
+	position: relative;
+	font-family: Arial;
+	color: #000000;
+	font-size: 14pt;
+}
+
+.box {
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	padding:5%;
+	border: 1px solid #000000;	
+	display: block;
+	width: 25%;
+}
+
+form {
+	margin: auto;
+
+}*/
+
+* {
+
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	padding: 10%;
+}
+form {
+	position: abosolute;
+	padding: 10%;
+	top: 25%;
+	border: 1px solid #dddddd;
+}
+

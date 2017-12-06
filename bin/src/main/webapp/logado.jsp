@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@page import="java.util.ArrayList"%>
-<%@page import="jpa.Usuario"%>
-
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8"/>
@@ -31,9 +28,6 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" style="color: black" href="#editarusuarios">Listar Usuários Cadastrados</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#alterarsenha" style="color: black">Alterar Senha</a>
             </li>
             <li class="nav-item">
@@ -49,56 +43,14 @@
 <br>
 <br>
 <br>
-<hr>	
 <div class=container>
 <div class="usuario">
 	<img src="img/user.png"/>	
 		<a href="#">Minha Conta</a>
 		<a href="#">Orçamentos</a>
-    </div>
 </div>
-<hr>
-<section id="editarusuarios">
-<div class="container">
-        <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-           <p></p>  
-		
-		<table border="1">
-      	<tr>
-        <th>Login</th> 
-        <th>Nome</th>
-        <th>Tipo</th>
-        <th>Ações</th>
-      </tr>
-      <%
-      ArrayList<Usuario> usuarios =
-        (ArrayList<Usuario>) request.getAttribute("usuarios");
-      for (Usuario usuario : usuarios) {
-      %>
-      <tr>
-        <td nome=loginencontrado value="<%=usuario.getLogin()%>"><%=usuario.getLogin()%></td>
-        <td><%=usuario.getNome()%></td>
-        <td><%=usuario.getTipo()%></td>
-        <td><a href="login?operacao=excluir&login=<%=usuario.getLogin()%>">Excluir</a></td>
-        <td>
-        	<form> 
-        	<select nome="tipo" onchange="this.form.submit()">
-        	<option></option>
-    		<option value="adm">Administrador</option>
-    		<option value="padrao">Comum</option>
-			</select> <td><a href="login?operacao=tipar&login=<%=usuario.getLogin()%>">Alterar Tipo</a></td>
-			</form>
-		</td>
-        
-      </tr>
-      <%}%>
-    </table>
-       </div>
-    </div>
-    </div>
-    </section>
-<hr>
+</div>
+
 <section id="alterarsenha">
 <div class="container">
         <div class="row">

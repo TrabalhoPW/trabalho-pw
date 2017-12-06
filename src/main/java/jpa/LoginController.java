@@ -26,7 +26,9 @@ public class LoginController extends HttpServlet {
 			String op = valor(req, "operacao", "");
 			String login = valor(req, "login", "");
 			String senha = valor(req, "senha", "");
-				
+			String tipo = valor(req, "tipo", "");
+			String loginencontrado = valor(req, "loginencontrado", "");
+			
 			String pagina = "login.jsp";
 			
 			if (op.equals("logar")) {
@@ -46,9 +48,15 @@ public class LoginController extends HttpServlet {
 					pagina ="login.jsp";	
 					msg = "Usuário ou Senha incorretos!";
 				}
-
+				
 			}else if (op.equals("alterar")) {
+				
 				UsuarioDao.AlterarSenha(login, senha);
+				msg = "Alteração realizada com sucesso.";
+				
+			}else if (op.equals("tipar")) {
+				
+				UsuarioDao.AlterarTipo(loginencontrado, tipo);
 				msg = "Alteração realizada com sucesso.";
 				
 			}else if (op.equals("excluir")) {

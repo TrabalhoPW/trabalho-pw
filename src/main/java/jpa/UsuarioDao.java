@@ -92,6 +92,19 @@ public class UsuarioDao {
 		em.getTransaction().commit();
 		em.close();
 	}
+	public static void AlterarTipo (String login, String tipo) {
+		// Obter "conexão".
+		EntityManager em = emf.createEntityManager();
+		em.getTransaction().begin();
+
+		Usuario usuario = em.find(Usuario.class, login);
+		usuario.setTipo(tipo);
+
+		// Grava o objeto no banco de dados.
+		em.refresh(usuario);
+		em.getTransaction().commit();
+		em.close();
+	}
 
 	public static List<Usuario> listar() {
 		EntityManager em = emf.createEntityManager();
