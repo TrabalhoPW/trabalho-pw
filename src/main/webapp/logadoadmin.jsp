@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="jpa.Usuario"%>
+
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8"/>
@@ -45,15 +48,41 @@
 <br>
 <br>
 <br>
-<br>	
+<br>
+<hr>	
 <div class=container>
 <div class="usuario">
 	<img src="img/user.png"/>	
 		<a href="#">Minha Conta</a>
 		<a href="#">Orçamentos</a>
+    </div>
 </div>
-</div>
-
+<hr>
+<section id="alterarsenha">
+<div class="container">
+<div class="row">
+<table>
+      <tr>
+        <th>Login</th>
+        <th>Nome</th>
+        <th>Ações</th>
+      </tr>
+      <%
+      ArrayList<Usuario> usuarios =
+        (ArrayList<Usuario>) request.getAttribute("usuarios");
+      for (Usuario usuario : usuarios) {
+      %>
+      <tr>
+        <td><%=usuario.getLogin()%></td>
+        <td><%=usuario.getNome()%></td>
+        <td><a href="login?operacao=excluir&login=<%=usuario.getLogin()%>">Excluir</a></td>
+      </tr>
+      <%}%>
+    </table>
+       </div>
+    </div>
+    </section>
+<hr>
 <section id="alterarsenha">
 <div class="container">
         <div class="row">

@@ -80,7 +80,17 @@ public class UsuarioDao {
 		em.close();
 	}
 
-	public static void excluir(String matricula) {
+	public static void excluir(String login) {
+		
+		EntityManager em = emf.createEntityManager();
+		em.getTransaction().begin();
+
+		Usuario usuario = em.find(Usuario.class, login);
+
+		// Grava o objeto no banco de dados.
+		em.remove(usuario);
+		em.getTransaction().commit();
+		em.close();
 	}
 
 	public static List<Usuario> listar() {

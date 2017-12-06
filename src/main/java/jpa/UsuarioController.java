@@ -34,10 +34,7 @@ public class UsuarioController extends HttpServlet {
 			if (op.equals("cadastrar")) {
 				UsuarioDao.cadastrar(nome, login, senha);
 				msg = "Inclusão realizada com sucesso.";
-			/*} else if (op.equals("excluir")) {
-				UsuarioDao.excluir(matricula);
-				msg = "Exclusão realizada com sucesso.";
-			*/
+		
 
 			} else if (op.equals("")) {
 				

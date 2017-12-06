@@ -22,7 +22,7 @@ public class LoginController extends HttpServlet {
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 			
 		try {
-			String msg;
+			String msg = "";
 			String op = valor(req, "operacao", "");
 			String login = valor(req, "login", "");
 			String senha = valor(req, "senha", "");
@@ -51,6 +51,9 @@ public class LoginController extends HttpServlet {
 				UsuarioDao.AlterarSenha(login, senha);
 				msg = "Alteração realizada com sucesso.";
 				
+			}else if (op.equals("excluir")) {
+				UsuarioDao.excluir(login);
+			
 			}else if (op.equals("")) {
 				
 				msg = "";
@@ -58,8 +61,12 @@ public class LoginController extends HttpServlet {
 			} else {
 				throw new IllegalArgumentException("Operação \"" + op + "\" não suportada.");
 			}
+			
 			req.setAttribute("msg", msg);
+			req.setAttribute("usuarios", UsuarioDao.listar());
+			
 			req.getRequestDispatcher(pagina).forward(req, resp);
+			
 		} catch (Exception e) {
 			e.printStackTrace(resp.getWriter());
 		}

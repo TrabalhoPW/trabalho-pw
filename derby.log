@@ -1,8 +1,8 @@
-Tue Dec 05 07:14:26 BRST 2017 : Apache Derby Servidor de Rede - 10.14.1.0 - (1808820) iniciado e pronto para aceitar conexões na porta 1527 em {3}
+Wed Dec 06 09:48:01 BRST 2017 : Apache Derby Servidor de Rede - 10.14.1.0 - (1808820) iniciado e pronto para aceitar conexões na porta 1527 em {3}
 ----------------------------------------------------------------
-Tue Dec 05 07:15:02 BRST 2017:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-0160-25f4-7889-000007a10b38 
-on database directory C:\Users\marjesus\Desktop\PW\trabalho-pw\mrdb with class loader java.net.URLClassLoader@58451a7a 
+Wed Dec 06 09:48:12 BRST 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-0160-2ba7-6d66-000007a76e38 
+on database directory C:\Users\marjesus\Desktop\PW\trabalho-pw\mrdb with class loader java.net.URLClassLoader@5c50392a 
 Loaded from file:/C:/Users/marjesus/.m2/repository/org/apache/derby/derby/10.14.1.0/derby-10.14.1.0.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_151-b12
