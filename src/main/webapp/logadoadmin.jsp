@@ -18,7 +18,7 @@
     <link href="css/agency.min.css" rel="stylesheet">
 
 </head>
-<body>
+<body id="page-top">
 
  <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -30,8 +30,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" style="color: black" href="#page-top">Minha Conta</a>
+            </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" style="color: black" href="#editarusuarios">Listar Usuários Cadastrados</a>
+              <a class="nav-link js-scroll-trigger" style="color: black" href="#editarusuarios">Usuários Cadastrados</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#alterarsenha" style="color: black">Alterar Senha</a>
@@ -82,12 +85,14 @@
         <td><%=usuario.getTipo()%></td>
         <td><a href="login?operacao=excluir&login=<%=usuario.getLogin()%>">Excluir</a></td>
         <td>
-        	<form> 
-        	<select nome="tipo" onchange="this.form.submit()">
+        	<form>
+        	<input name="loginencontrado" type="hidden" readonly="true" value="<%=usuario.getLogin()%> ">
+        	<select name="tipo">
         	<option></option>
     		<option value="adm">Administrador</option>
     		<option value="padrao">Comum</option>
-			</select> <td><a href="login?operacao=tipar&login=<%=usuario.getLogin()%>">Alterar Tipo</a></td>
+			</select> 
+			<button name="operacao" value="tipar" class="btn btn-secondary">Alterar Tipo</button>
 			</form>
 		</td>
         
@@ -151,8 +156,6 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>

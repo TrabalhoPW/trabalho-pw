@@ -52,10 +52,15 @@ public class UsuarioDao {
 				pesq.setLogin("QWsdafsFAAsdsdafdteerbgDFAqwsAASdasdqweg");
 				pesq.setSenha("QWsdafsFAAsdsdafdteerbgDFAqwsAASdasdqweg");
 				pesq.setTipo("");
+				
 			}
 			if(login.equals(pesq.getLogin()) && senha.equals(pesq.getSenha())){
 				
-				
+				if (login.equals("admin")) {
+					
+					pesq.setTipo("adm");
+					
+				}
 				resultado = pesq.getTipo() == null ? "padrao" : pesq.getTipo();
 				System.out.println(resultado);
 				return resultado;	
@@ -75,7 +80,7 @@ public class UsuarioDao {
 		usuario.setSenha(novasenha);
 
 		// Grava o objeto no banco de dados.
-		em.refresh(usuario);
+		em.merge(usuario);
 		em.getTransaction().commit();
 		em.close();
 	}
@@ -101,7 +106,7 @@ public class UsuarioDao {
 		usuario.setTipo(tipo);
 
 		// Grava o objeto no banco de dados.
-		em.refresh(usuario);
+		em.merge(usuario);
 		em.getTransaction().commit();
 		em.close();
 	}

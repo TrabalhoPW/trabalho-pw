@@ -31,6 +31,8 @@ public class LoginController extends HttpServlet {
 			
 			String pagina = "login.jsp";
 			
+			System.out.println(op);
+			
 			if (op.equals("logar")) {
 				
 				

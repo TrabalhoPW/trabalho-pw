@@ -23,15 +23,6 @@
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
 
-    <script> 
-      
-        function mensagem(){
-          
-          alert(${msg}));
-        }
-      
-      </script>
-
   </head>
 
   <body id="page-top">
@@ -88,7 +79,7 @@
                           <br>
                           <div id="success"></div>
                           <div class="form-group">
-                            <button name="operacao" value="logar" class="btn btn-secondary" onclick="mensagem()">Entrar</button>
+                            <button name="operacao" value="logar" class="btn btn-secondary">Entrar</button>
                           </div>
                         </form>
                       </div>

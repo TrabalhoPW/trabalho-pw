@@ -31,7 +31,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" style="color: black">Listar Usuários Cadastrados</a>
+              <a class="nav-link js-scroll-trigger" style="color: black" href="#editarusuarios">Listar Usuários Cadastrados</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#alterarsenha" style="color: black">Alterar Senha</a>
@@ -58,13 +58,17 @@
     </div>
 </div>
 <hr>
-<section id="alterarsenha">
+<section id="editarusuarios">
 <div class="container">
-<div class="row">
-<table>
-      <tr>
-        <th>Login</th>
+        <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+           <p></p>  
+		
+		<table border="1">
+      	<tr>
+        <th>Login</th> 
         <th>Nome</th>
+        <th>Tipo</th>
         <th>Ações</th>
       </tr>
       <%
@@ -73,13 +77,27 @@
       for (Usuario usuario : usuarios) {
       %>
       <tr>
-        <td><%=usuario.getLogin()%></td>
+        <td nome=loginencontrado value="<%=usuario.getLogin()%>"><%=usuario.getLogin()%></td>
         <td><%=usuario.getNome()%></td>
+        <td><%=usuario.getTipo()%></td>
         <td><a href="login?operacao=excluir&login=<%=usuario.getLogin()%>">Excluir</a></td>
+        <td>
+        	<form>
+        	<input name="loginencontrado" type="hidden" readonly="true" value="<%=usuario.getLogin()%> ">
+        	<select name="tipo">
+        	<option></option>
+    		<option value="adm">Administrador</option>
+    		<option value="padrao">Comum</option>
+			</select> 
+			<button name="operacao" value="tipar" class="btn btn-secondary">Alterar Tipo</button>
+			</form>
+		</td>
+        
       </tr>
       <%}%>
     </table>
        </div>
+    </div>
     </div>
     </section>
 <hr>

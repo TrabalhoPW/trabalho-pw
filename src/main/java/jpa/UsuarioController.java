@@ -43,8 +43,6 @@ public class UsuarioController extends HttpServlet {
 				throw new IllegalArgumentException("Operação \"" + op + "\" não suportada.");
 			}
 			req.setAttribute("msg", msg);
-			//req.setAttribute("professores", UsuarioDao.listar());
-			
 			req.getRequestDispatcher(pagina).forward(req, resp);
 		} catch (Exception e) {
 			e.printStackTrace(resp.getWriter());
