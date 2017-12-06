@@ -1,9 +1,6 @@
-node_modules
-/target/
-/mrdb/
-/Pesquisas
-/derby.log
+/.classpath
 /.project
 /.settings/
-derby.log
-/.classpath
+/target/
+/mrdb/
+/derby.log
