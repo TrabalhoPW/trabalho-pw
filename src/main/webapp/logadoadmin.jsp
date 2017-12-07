@@ -50,8 +50,6 @@
 <br>
 <br>
 <br>
-<br>
-<br>
 <hr>	
 <div class=container>
 <div class="usuario">
@@ -63,16 +61,18 @@
 <hr>
 <section id="editarusuarios">
 <div class="container">
+        
         <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-           <p></p>  
-		
-		<table border="1">
+        <div class="col-lg-6 col-md-10 mx-auto">
+		<h2>Lista de Usuários Cadastrados</h2>
+		<br>
+		<table style="width:100%">
       	<tr>
         <th>Login</th> 
         <th>Nome</th>
         <th>Tipo</th>
         <th>Ações</th>
+        <th>Alterar Tipo</th>
       </tr>
       <%
       ArrayList<Usuario> usuarios =
@@ -88,11 +88,10 @@
         	<form>
         	<input name="loginencontrado" type="hidden" readonly="true" value="<%=usuario.getLogin()%> ">
         	<select name="tipo">
-        	<option></option>
-    		<option value="adm">Administrador</option>
-    		<option value="padrao">Comum</option>
+    		<option value="adm" >Administrador</option>
+    		<option value="padrao" selected="selected">Comum</option>
 			</select> 
-			<button name="operacao" value="tipar" class="btn btn-secondary">Alterar Tipo</button>
+			<button name="operacao" value="tipar" class="btn btn-secondary">Alterar</button>
 			</form>
 		</td>
         
