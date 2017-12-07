@@ -22,6 +22,20 @@ public class UsuarioDao {
 		// Obter "conexão".
 		EntityManager em = emf.createEntityManager();
 		em.getTransaction().begin();
+		
+		Usuario pesq = em.find(Usuario.class, login);
+		
+		if (pesq == null) {
+			
+			pesq = new Usuario();
+			pesq.setLogin("QWsdafsFAAsdsdafdteerbgDFAqwsAASdasdqweg");
+			pesq.setSenha("QWsdafsFAAsdsdafdteerbgDFAqwsAASdasdqweg");
+			pesq.setTipo("");
+			
+		}
+		if(login.equals(pesq.getLogin())){
+			
+		}else {
 
 		Usuario usuario = new Usuario();
 		usuario.setNome(nome);
@@ -33,6 +47,7 @@ public class UsuarioDao {
 		em.persist(usuario);
 		em.getTransaction().commit();
 		em.close();
+		}
 	}
 	public static String PesquisarLogin(String login, String senha) {
 		
