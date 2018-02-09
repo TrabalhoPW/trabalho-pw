@@ -63,6 +63,7 @@ public class LoginController extends HttpServlet {
 				
 			}else if (op.equals("excluir")) {
 				UsuarioDao.excluir(login);
+				msg = "Exclusão realizada com sucesso.";
 			
 			}else if (op.equals("")) {
 				
